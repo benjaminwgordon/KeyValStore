@@ -17,7 +17,7 @@ app.post("/set", async (req, res) => {
       res.send("invalid request: must provide key value pair");
     } else {
       keyValueStore.set(key, val);
-      res.status(200).send("ok");
+      res.status(201).send("ok");
     }
   }
 });
